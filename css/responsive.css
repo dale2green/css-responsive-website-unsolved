@@ -10,8 +10,240 @@
   } */
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  .top-navigation .trigram {
+    display: none;
+  }
+  .top-navigation ul li a:hover {
+    color: blue;
+    font-weight: bold;
+  }
+
+  .teammate-social-icons > div:hover {
+    background-color: darkolivegreen;
+  }
+
+  .social-icons div:hover {
+    background-color: white;
+  }
+  .social-icons .facebook:hover,
+  .social-icons .twitter:hover,
+  .social-icons .instagram:hover,
+  .social-icons .linked-in:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .footer-contacts ul li a:hover {
+    color: white;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (max-width: 1023px) {
+  .top-navigation .trigram {
+    color: grey;
+  }
+
+  .top-navigation .trigram:hover {
+    color: olivedrab;
+  }
+
+  div.content.header-content {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+  }
+  .top-navigation ul li {
+    display: none;
+  }
+
+  .portfolio-item {
+    flex-direction: row;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+  }
+
+  .portfolio-img-wrapper img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .portfolio-item-info {
+    padding-top: 10px;
+    justify-items: center;
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+  .teammates-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .teammate {
+    width: 47%;
+  }
+
+  .teammate-img-wrapper {
+    width: 100%;
+    object-fit: cover;
+  }
+  .teammate-data {
+    align-items: center;
+  }
+  .teammate-info {
+    align-items: center;
+  }
+  .teammate-social-icons > div:hover {
+    background-color: olivedrab;
+  }
+
+  /* footer */
+  div.icon:hover {
+    background-color: white;
+  }
+  footer .social-icons .facebook > span,
+  footer .social-icons .twitter > span,
+  footer .social-icons .instagram > span,
+  footer .social-icons .linked-in > span {
+    display: none;
+  }
+
+  footer .social-icons .facebook,
+  footer .social-icons .twitter,
+  footer .social-icons .instagram,
+  footer .social-icons .linked-in {
+    width: 30px;
+  }
+  .footer-contacts ul li a:hover {
+    color: white;
+  }
+
+  .footer-contacts {
+    flex-direction: row;
+    height: 250px;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .address,
+  .email,
+  .phones {
+    padding-top: 20px;
+  }
+
+  .email {
+    justify-content: end;
+    padding-bottom: 30px;
+  }
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 767px) {
+  .top-navigation .trigram:hover {
+    color: blue;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-item-info {
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .item-description {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content p.subtext {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /*teammates*/
+  .teammate {
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    border: 1px solid grey;
+  }
+
+  .teammate-img-wrapper {
+    width: 45%;
+    padding: 7px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid yellowgreen;
+  }
+
+  .teammate-data {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 15px;
+    row-gap: 12px;
+    width: 53%;
+    height: 190px;
+  }
+
+  .teammate-info {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .teammate-social-icons {
+    gap: 20px;
+  }
+
+  /* footer */
+  .social-icons {
+    flex-direction: column;
+    width: 140px;
+  }
+
+  .social-icons > div .icon {
+    width: 30px;
+  }
+
+  .social-icons > div .icon:hover {
+    background-color: white;
+  }
+
+  footer .social-icons .facebook,
+  footer .social-icons .twitter,
+  footer .social-icons .instagram,
+  footer .social-icons .linked-in {
+    width: 130px;
+  }
+  footer .social-icons .facebook:hover,
+  footer .social-icons .twitter:hover,
+  footer .social-icons .instagram:hover,
+  footer .social-icons .linked-in:hover {
+    color: white;
+  }
+
+  footer .social-icons .facebook > span,
+  footer .social-icons .twitter > span,
+  footer .social-icons .instagram > span,
+  footer .social-icons .linked-in > span {
+    display: contents;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+}
